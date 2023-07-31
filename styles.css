@@ -1,0 +1,210 @@
+/* CSS WRITTEN BY MADALITSO KAJ MUVA */
+/* Example on using Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Geologica&family=Laila:wght@300&family=Raleway:ital,wght@1,200&display=swap');
+/* Mobile First Design Approach */
+body,
+html {
+    /* Example of how to use CSS variable */
+    --bgc: #f0f0f0;
+    --themeColor: rgba(192, 235, 246, 0.943);
+    --themeColorPrimary: rgb(16, 154, 188);
+    --primaryFont: Laila;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.typing-text {
+    margin-top: -1.2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--themeColorPrimary);
+    font-family: Raleway;
+    font-style: italic;
+    background-color: aliceblue;
+}
+#brand{
+    position: relative;
+    top:-0.8rem;
+    padding: 1rem 0 1rem 0;
+    border: 0;
+    z-index: -1;
+
+}
+
+#brand h1 {
+    font-size: 2.8rem;
+   
+}
+input,
+textarea {
+    width: 100%;
+    border: 0;
+    padding: 0.8rem 0.3rem;
+    border-bottom: 1px solid var(--bgc);
+    border-style: outset;
+    font-family: var(--primaryFont);
+
+}
+
+textarea {
+    border: 1px solid var(--bgc);
+    border-style: outset;
+    text-align: left;
+    color: gray
+}
+
+table {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+td, th{
+    padding: 0.7rem; 
+    border-bottom: 1px solid var(--bgc);
+    text-align: left;
+}
+
+
+tr {
+    border-collapse: collapse;
+}
+
+textarea:focus {
+    color: black;
+    border: 1px solid var(--themeColor);
+}
+
+[type="submit"] {
+    border: 1px solid var(--themeColorPrimary);
+    ;
+    background-color: var(--themeColorPrimary);
+    border-radius: 1.3rem;
+
+}
+
+#profilepic {
+    display: block;
+    width: 200px;
+    margin: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+}
+
+body>header {
+    position: sticky;
+    top: -14rem;
+    text-align: center;
+    background-color: var(--themeColor);
+    box-sizing: border-box;
+
+}
+header h1{
+    font-family: Domine;
+    font-size: 2rem;
+}
+#intro h1{
+    font-family: 'Geologica';
+    color: rgb(5, 92, 146);
+}
+
+#flex-container {
+    margin: 1rem;
+    font-family: var(--primaryFont);
+    box-sizing: border-box;
+
+}
+
+
+.flex-item article {
+    background-color: var(--bgc);
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 2px;
+    font-family: var(--primaryFont);
+    box-sizing: border-box;
+
+}
+
+hr {
+    margin-top: -15px;
+    border: 1px solid white;
+}
+
+#intro h3,
+aside h1 {
+    font-family: var(--primaryFont);
+    font-size: 2rem;
+
+}
+
+article h2 {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+
+}
+aside {
+    position: static;
+    right: 0.5rem;
+    top: 5rem;
+    
+}
+body>header {
+    
+    width: 100%;
+}
+
+#intro p {
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+}
+/* For Desktops */
+@media only screen and (min-width: 1200px) {
+
+    body>header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 20rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20rem;
+        
+
+
+    }
+
+    .flex-item {
+        padding: 20px;
+
+    }
+    
+    .flex-item:first-child {
+        width: 70%;
+    }
+
+
+
+    aside {
+        position: fixed;
+        right: 0.5rem;
+        top: 5rem;
+        
+    }
+
+
+}
