@@ -1,6 +1,7 @@
 /* CSS WRITTEN BY MADALITSO KAJ MUVA */
 /* Example on using Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=Geologica&family=Laila:wght@300&family=Raleway:ital,wght@1,200&display=swap');
+
 /* Mobile First Design Approach */
 body,
 html {
@@ -12,7 +13,9 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 .typing-text {
     margin-top: -1.2rem;
     font-size: 2.5rem;
@@ -20,21 +23,29 @@ html {
     color: var(--themeColorPrimary);
     font-family: Raleway;
     font-style: italic;
-    background-color: aliceblue;
+    text-align: center; 
 }
-#brand{
+
+#brand {
     position: relative;
-    top:-0.8rem;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem  1rem;
     border: 0;
     z-index: -1;
+    border-top-right-radius: 0.1rem;
+    border-top-left-radius: 0.1rem;
+    
 
 }
 
 #brand h1 {
-    font-size: 2.8rem;
-   
+    font-size: 3rem;
+    
 }
+
+section header h1 {
+    text-align: center;
+}
+
 input,
 textarea {
     width: 100%;
@@ -59,8 +70,9 @@ table {
 
 }
 
-td, th{
-    padding: 0.7rem; 
+td,
+th {
+    padding: 0.7rem;
     border-bottom: 1px solid var(--bgc);
     text-align: left;
 }
@@ -96,15 +108,17 @@ body>header {
     position: sticky;
     top: -14rem;
     text-align: center;
-    background-color: var(--themeColor);
+    background-image: linear-gradient(to right, var(--themeColor), rgb(240, 244, 253));
     box-sizing: border-box;
 
 }
-header h1{
+
+header h1 {
     font-family: Domine;
     font-size: 2rem;
 }
-#intro h1{
+
+#intro h1 {
     font-family: 'Geologica';
     color: rgb(5, 92, 146);
 }
@@ -136,8 +150,10 @@ hr {
 aside h1 {
     font-family: var(--primaryFont);
     font-size: 2rem;
+    
 
 }
+
 
 article h2 {
     font-size: 1.5rem;
@@ -147,21 +163,24 @@ h1 {
     font-size: 3rem;
 
 }
+
 aside {
     position: static;
     right: 0.5rem;
     top: 5rem;
-    
+
 }
+
 body>header {
-    
+
     width: 100%;
 }
 
 #intro p {
     font-family: 'Raleway';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
+
 /* For Desktops */
 @media only screen and (min-width: 1200px) {
 
@@ -183,8 +202,6 @@ body>header {
         display: flex;
         flex-wrap: wrap;
         margin-left: 20rem;
-        
-
 
     }
 
@@ -192,18 +209,16 @@ body>header {
         padding: 20px;
 
     }
-    
+
     .flex-item:first-child {
         width: 70%;
     }
-
-
 
     aside {
         position: fixed;
         right: 0.5rem;
         top: 5rem;
-        
+
     }
 
 
