@@ -108,7 +108,7 @@ body>header {
     position: sticky;
     top: -14rem;
     text-align: center;
-    background-image: linear-gradient(to right, var(--themeColor), rgb(240, 244, 253));
+    background: var(--themeColor);
     box-sizing: border-box;
 
 }
